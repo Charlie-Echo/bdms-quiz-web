@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.title {
+  padding-right: 5px;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+.question-prefix {
+  font-weight: 700;
+}
+
+.menu {
+  min-height: 30px;
+  line-height: 30px;
+  width: 100%;
+  background-color: #111111;
+  color: #f0f0f0;
+  position: fixed;
+
+  &.top {
+    top: 0px;
+  }
+
+  &.bottom {
+    bottom: 0px;
+  }
+}
+
+.question-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.question-body:nth-child(odd) {
+  padding: 20px;
+  background-color: #aaaaaa;
+}
+
+.question-body:nth-child(even) {
+  padding: 20px;
+  background-color: #888888;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  &.leaderboard {
+    background-color: #aaaaaa;
+  }
+}
