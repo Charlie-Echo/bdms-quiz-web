@@ -248,7 +248,7 @@
     },
     {
         "id": "20",
-        "question": "Who is the most \"Seiso\" member in Hololive",
+        "question": "Who is the most \"Seiso\" member in Hololive?",
         "choices": {
             "answer": "b",
             "list": {
@@ -261,7 +261,7 @@
     },
     {
         "id": "21",
-        "question": "Who is called \"Mama\" in Hololive",
+        "question": "Who is called \"Mama\" in Hololive?",
         "choices": {
             "answer": "c",
             "list": {
@@ -269,6 +269,58 @@
                 "b": "Nekomata Okayu",
                 "c": "Ookami Mio",
                 "d": "Shirakami Fubuki"
+            }
+        }
+    },
+    {
+        "id": "22",
+        "question": "Which space mission was the first that landed on the Moon?",
+        "choices": {
+            "answer": "c",
+            "list": {
+                "a": "Sputnik 1",
+                "b": "Vostok 1",
+                "c": "Apollo 11",
+                "d": "Apollo 13"
+            }
+        }
+    },
+    {
+        "id": "23",
+        "question": "Which space mission was the first that carried an astronaut/cosmonaut to the space?",
+        "choices": {
+            "answer": "b",
+            "list": {
+                "a": "Sputnik 1",
+                "b": "Vostok 1",
+                "c": "Apollo 11",
+                "d": "Apollo 13"
+            }
+        }
+    },
+    {
+        "id": "24",
+        "question": "Which one was the first satellite launched to the space?",
+        "choices": {
+            "answer": "a",
+            "list": {
+                "a": "Sputnik 1",
+                "b": "Vostok 1",
+                "c": "Apollo 11",
+                "d": "Apollo 13"
+            }
+        }
+    },
+    {
+        "id": "25",
+        "question": "Which space mission experienced accident and caused the crews to return to the Earth?",
+        "choices": {
+            "answer": "d",
+            "list": {
+                "a": "Sputnik 1",
+                "b": "Vostok 1",
+                "c": "Apollo 11",
+                "d": "Apollo 13"
             }
         }
     }
