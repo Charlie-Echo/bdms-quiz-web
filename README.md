@@ -1,4 +1,4 @@
-Quiz Web
+Quiz Web | c64b4cfa3e9c48d8f8c9a761cfde79eb
 ==========
 
 This project, when initialized and accessed, will randomly pick 20 questions from the list for the user to answer. And when they answered all questions, they can submit the answers and fill their name to be shown along with their score in the leaderboard 
