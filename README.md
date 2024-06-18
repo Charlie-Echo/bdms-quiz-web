@@ -14,7 +14,7 @@ This project is based on Node.js version 20.11.0.
 
 ## Utilization
 
-Once the installation process is successful, you can start initializing this API with the following command:
+Once the installation process is successful, you can start initializing this project with the following command:
 ```
 npm run start
 ```
@@ -30,6 +30,6 @@ You can now view quiz-web in the browser.
 Local:            http://localhost:3000
 On Your Network:  http://xxx.xxx.xxx.xxx:3000
 ```
-After you accessed the site, you will be greet by the questions, along with the leaderboard banner on the top and the submit button and its banner at the bottom.
+After you accessed the project (by entering the URL above into the browser's address bar), you will be greet by the questions, along with the leaderboard banner on the top and the submit button and its banner at the bottom.
 
 Have fun!
