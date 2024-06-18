@@ -30,3 +30,6 @@ You can now view quiz-web in the browser.
 Local:            http://localhost:3000
 On Your Network:  http://xxx.xxx.xxx.xxx:3000
 ```
+After you accessed the site, you will be greet by the questions, along with the leaderboard banner on the top and the submit button and its banner at the bottom.
+
+Have fun!
