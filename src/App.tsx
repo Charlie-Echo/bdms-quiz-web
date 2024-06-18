@@ -146,16 +146,14 @@ function App() {
     }
 
     if (leaderboard.length > 0) {
-      let splitedDateTime: string[];
       for (let index = 0; index < totalTopScores; index++) {
         if (leaderboard[index]) {
-          splitedDateTime = new Date(leaderboard[index].timestamp).toISOString().split('T');
           elements.push(
             <tr key={'leaderboard-' + index} className='leaderboard'>
               <td>#{ index + 1 }</td>
               <td>{ leaderboard[index].value.username }</td>
               <td>{ leaderboard[index].value.score + ' / ' + leaderboard[index].value.maxScore }</td>
-              <td>{ splitedDateTime[0] + ' ' + splitedDateTime[1].split('.')[0] }</td>
+              <td>{ getLeaderboardDatetime(new Date(leaderboard[index].timestamp)) }</td>
             </tr>
           );
         }
@@ -184,12 +182,11 @@ function App() {
 
   function findLastIndexForLeaderboard(
     leaderboardData: LeaderboardDataWithTime[], data: LeaderboardDataWithTime
-  ) {
+  ): number {
     let lastIndex = -1;
     let scoreGroup = data.value.score - 1;
     for (scoreGroup; scoreGroup >= -1; scoreGroup--) {
       lastIndex = findLastIndexScoreGroup(leaderboardData, scoreGroup);
-
       if (lastIndex !== -1) break;
     }
 
@@ -198,8 +195,16 @@ function App() {
     return lastIndex;
   }
 
-  function findLastIndexScoreGroup(data: LeaderboardDataWithTime[], scoreGroup: number) {
+  function findLastIndexScoreGroup(data: LeaderboardDataWithTime[], scoreGroup: number): number {
     return data.findIndex(topScore => topScore.value.score === scoreGroup);
+  }
+
+  function getLeaderboardDatetime(dateTime: Date): string {
+    return `${dateTime.getFullYear()}/${formatDate(dateTime.getMonth())}/${formatDate(dateTime.getDate())} ${formatDate(dateTime.getHours())}:${formatDate(dateTime.getMinutes())}:${formatDate(dateTime.getSeconds())}`
+  }
+
+  function formatDate(incomingValue: number): string {
+    return incomingValue >= 10 ? incomingValue.toString() : '0' + incomingValue.toString() ;
   }
 
   function shuffle(incomingArray: any[]): any[] {
